@@ -1,5 +1,5 @@
 (function (angular) {
-    angular.module('App', []).controller('ListCtrl', ['$scope', function ($scope) {
+    angular.module('app', []).controller('ListCtrl', ['$scope', function ($scope) {
             $scope.todoItems = [{
                     content: '去医院看牙',
                     done: false

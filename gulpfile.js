@@ -17,7 +17,7 @@ gulp.task('styles', ['less'], function () {
 gulp.task('less', function() {
   return gulp.src('app/styles/*.less')
   .pipe($.less())
-  .pipe(gulp.dest('app/styles'))
+  .pipe(gulp.dest('.tmp/styles'))
   .pipe(gulp.dest('dist/styles'));
 });
 

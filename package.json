@@ -1,5 +1,5 @@
 {
-  "name": "testing",
+  "name": "GulpCodingBestPractice",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@https://github.com/wangyijing130/gulp-practice.git"
+    "url": "git@git.coding.net:rickytan/GulpCodingBestPractice.git"
   },
-  "author": "wangyijing",
+  "author": "Ricky Tan",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer-core": "*",

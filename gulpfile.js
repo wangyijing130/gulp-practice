@@ -1,5 +1,6 @@
-
+/*global -$ */
 'use strict';
+// generated on <%= (new Date).toISOString().split('T')[0] %> using <%= pkg.name %> <%= pkg.version %>
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
@@ -51,8 +52,8 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')().concat(['app/fonts/**/*','bower_components/bootstrap/fonts/!**!/!*']))
-    .pipe($.filter('**/!*.{eot,svg,ttf,woff,woff2,otf}'))
+  return gulp.src(require('main-bower-files')().concat(['app/fonts/**/*','bower_components/bootstrap/fonts/**/*']))
+    .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2,otf}'))
     .pipe($.flatten())
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
